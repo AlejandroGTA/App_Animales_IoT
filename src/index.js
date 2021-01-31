@@ -15,7 +15,7 @@ app.use('/', require('../src/route/Home/Home'));
 
 const port = process.env.port || 3000;
 // process.env.PORT, '0.0.0.0'
-server.listen(port, function (){
+server.listen(process.env.PORT, '0.0.0.0', function (){
     console.log("Started");
 });
 
