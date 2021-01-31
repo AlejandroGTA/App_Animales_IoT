@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div>
+    <h1>Direccion: https://appcomidaiot.herokuapp.com/</h1>
+  </div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">URL</th>
+            <th scope="col">Do</th>
+            <th scope="col">Json</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <th scope="row">1</th>
+            <td>/Add</td>
+            <td>Agregas una nueva placa</td>
+            <td>
+              {
+                "Id": String, 
+                "Button": Boolean, 
+                "Compuerta": Numero,
+                "Horas": Numero, 
+                "Minutos": Numero, 
+                "Dias": Numero, 
+                "Cantidad": Numero
+              }
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">2</th>
+            <td>/Edit</td>
+            <td>Editas los valores de la placa</td>
+            <td>
+              {
+                "Id": String, 
+                "Button": Boolean, 
+                "Compuerta": Numero,
+                "Horas": Numero, 
+                "Minutos": Numero, 
+                "Dias": Numero, 
+                "Cantidad": Numero
+              }
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">3</th>
+            <td>/Button</td>
+            <td>Editas el estado del button</td>
+            <td>
+              {
+                "Id":"asdasdasd", 
+                "Button": Boolean
+              }
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">4</th>
+            <td>/Compuerta</td>
+            <td>Editas el estado del la Compuerta</td>
+            <td>
+              {
+                "Id":"asdasdasd", 
+                "Compuerta": Boolean
+              }
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">5</th>
+            <td>/Horas</td>
+            <td>Editas el estado del la Horas</td>
+            <td>
+              {
+                "Id":"asdasdasd", 
+                "Horas": Numero
+              }
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">6</th>
+            <td>/Minutos</td>
+            <td>Editas el estado del los Minutos</td>
+            <td>
+              {
+                "Id":String, 
+                "Minutos": Numero
+              }
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">7</th>
+            <td>/Dias</td>
+            <td>Editas el estado del los Dias</td>
+            <td>
+              {
+                "Id":String, 
+                "Dias": Numero
+              }
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">8</th>
+            <td>/Cantidad</td>
+            <td>Editas el estado del la Cantidad</td>
+            <td>
+              {
+                "Id":String, 
+                "Cantidad": Numero
+              }
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+</body>
+</html>
