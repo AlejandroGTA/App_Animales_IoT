@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const Placa = require('../../DB/Schemas/Data');
 const route = express.Router();
+require('../../public/datos');
+
 
 route.get('/', async(req, res)=>{
    res.render('index');
@@ -45,7 +47,7 @@ route.post('/Button', async(req, res)=>{
         {
             Button:Button
         });
-
+    global.Button = Button;
     res.json(placa);
 });
 
@@ -58,7 +60,7 @@ route.post('/Compuerta', async(req, res)=>{
         {
             Compuerta:Compuerta
         });
-
+    global.Compuerta = Compuerta;
     res.json(placa);
 });
 
@@ -71,7 +73,7 @@ route.post('/Dias', async(req, res)=>{
         {
             Dias:Dias
         });
-
+    global.Dias = Dias;
     res.json(placa);
 });
 
@@ -84,7 +86,7 @@ route.post('/Horas', async(req, res)=>{
         {
             Horas:Horas
         });
-
+    global.Horas = Horas;
     res.json(placa);
 });
 
@@ -97,7 +99,7 @@ route.post('/Minutos', async(req, res)=>{
         {
             Minutos:Minutos
         });
-
+    global.Minutos = Minutos;
     res.json(placa);
 });
 
@@ -110,7 +112,7 @@ route.post('/Cantidad', async(req, res)=>{
         {
             Cantidad:Cantidad
         });
-
+    global.Cantidad = Cantidad;
     res.json(placa);
 });
 
