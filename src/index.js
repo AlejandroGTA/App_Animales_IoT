@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const engine = require('ejs-mate');
 const path = require('path');
+const bodyParser = require('body-parser');
 var server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
@@ -13,7 +14,7 @@ app.engine('ejs',engine);
 app.set('view engine','ejs');
 app.use('/public',express.static(path.join(__dirname,'public')));
 app.use(express.json());
-
+app.use(bodyParser.urlencoded({ extended : true }))
 app.use('/', require('../src/route/Home/Home'));
 
 const port = process.env.port || 3000;
